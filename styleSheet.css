@@ -4,25 +4,25 @@
     color: var(--color-13);
 }
 :root{
-    --color-1: rgb(4, 4, 61);
-    --color-2: rgb(133, 55, 250);
-    --color-3: rgb(74, 241, 241);
-    --color-4: rgb(27, 187, 187);
-    --color-5: rgb(226, 107, 117);
+    --color-1: rgb(12, 12, 84);
+    --color-2: rgb(81, 42, 141);
+    --color-3: rgb(62, 169, 235);
+    --color-4: rgb(46, 214, 214);
+    --color-5: rgb(238, 84, 76);
     --color-6: rgb(52, 52, 243);
     --color-7: rgb(244,186,26);
     --color-8: rgb(249, 57, 57);
-    --color-9: rgb(0, 0, 0);
-    --color-10: rgb(32, 32, 32);
+    --color-9: rgb(10, 10, 10);
+    --color-10: rgb(23, 22, 22);
     --color-11: rgb(0, 217, 255);
-    --color-12: rgb(68, 68, 68);
+    --color-12: rgb(58, 57, 57);
     --color-13: rgb(255, 255, 255);
 }
 .page-wraper{
     position: relative;
+    width: 800px;
 }
 .nav-bar{
-    width: 800px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -36,13 +36,17 @@
     border-radius: 25px;
     text-align: center;
     padding: 2px 10px;
-    background: linear-gradient(var(--color-4), var(--color-3)20%);
+    font-size: 12px;
+    border: none;
+    background: linear-gradient(160deg, var(--color-4), var(--color-3));
 }
 .buttons #button-2{
     border-radius: 25px;
     text-align: center;
     padding: 2px 10px;
-    background: var(--color-5);
+    font-size: 12px;
+    border: none;
+    background: linear-gradient(160deg, var(--color-5), var(--color-7));
 }
 .nav-bar .contact{
     display: flex;
@@ -58,8 +62,7 @@
 }
 
 .hero-section{
-    width: 800px;
-    height: 440px;
+    height: 450px;
     background: var(--color-1);
     background-image: url("vritualevent.png");
     background-size: 360px;
@@ -68,6 +71,7 @@
 }
 .heading{
     text-align: center;
+    padding-top: 30px;
 }
 .head{
     display: inline-block;
@@ -76,7 +80,7 @@
     font-size: 16px;
     font-weight: 700;
     text-align: start;
-    margin-left: 8px;
+    margin-left: 15px;
 }
 
 .heading h1{
@@ -94,16 +98,40 @@
     font-size: 24px;
 }
 .cards{
-    position: relative;
+    position: relative;    
 }
 .cards p{
     font-size: 8px;
     padding: 5px 5px 0 5px;
 }
-.cards #value{
+#value-1{
     font-size: 16px;
     font-weight: 700;
-    padding-right: 15px;
+    padding-right: 18px;
+}
+#value-2{
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 40px;
+}
+#value-3{
+    font-size: 16px;
+    font-weight: 700;
+    padding-right: 25px;
+}
+#value-4{
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 28px;
+}
+#value-5{
+    font-size: 16px;
+    font-weight: 700;
+    padding-right: 7px;
+}#value-6{
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 45px;
 }
 .cards .icon-1, .icon-3, .icon-5{
     width: 30px;
@@ -194,7 +222,6 @@
 }
 
 .feature-section{
-    width: 800px;
     height: 50px;
     line-height: 2;
     background: var(--color-10);
@@ -218,7 +245,6 @@
 }
 .plan-section{
     background: var(--color-9);
-    width: 800px;
 }
 .plan-section .span-2{
     background: linear-gradient(to right, var(--color-7),var(--color-5), var(--color-6)); 
@@ -232,12 +258,13 @@
 }
 #plan-logo {
     position: relative;
-    left: -10px;
+    left: -25px;
     top: 20px;
 }
 .plan-title{
     text-align: center;
-    padding: 30px 20px;
+    padding-top: 50px;
+    padding-bottom: 70px;
 }
 .circle-1{
     border: 2px solid var(--color-11);
@@ -306,7 +333,9 @@
 }
 .inner-circle p{
     font-size: 8px;
-
+}
+.inner-circle #para{
+    padding-top: 6px;
 }
 .inner-circle #value{
     font-size: 14px;
@@ -315,43 +344,121 @@
 #inner-circle-1{
     position: relative;
     right: 170px;
-    top: 80px;
+    top: -40px;
 }
 #inner-circle-5{
     position: relative;
     left: 100px;
-    bottom: 50px
+    bottom: 180px
 }
 #inner-circle-3{
     position: relative;
-    left: -30px;
-    top: -25px;
+    right: 30px;
+    bottom: 35px;
 }
 #inner-circle-6{
     position: relative;
     left: 145px;
-    top:30px;
+    top:0px;
 }
 #inner-circle-2{
     position: relative;
     right: 85px;
-    top: 20px;
+    top: 15px;
 }
 #inner-circle-4{
     position: relative;
     left: 60px;
-    bottom: 60px;
+    bottom: 90px;
 }
 .bar{
-    width: 80px;
+    width: 45px;
     border-radius: 20px;
-    background: linear-gradient(1200deg, var(--color-6),var(--color-2),var(--color-5));
+    background: linear-gradient(120deg, var(--color-6),var(--color-2),var(--color-5));
+    font-size: 8px;
+    padding: 2px 10px;
+    text-align: center;
+}
+#bar-1{
+    width: 200px;
+    border: 2px solid var(--color-7);
+    border-radius: 10px;
+    position: relative;
+    right: 200px;
+    top: -50px;
+    line-height: 1.8;
+    background: var(--color-2);
+}
+#basic-plan{
+    width: 65px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 45px;
+    left: -20px;
+    background: linear-gradient(240deg, var(--color-6),var(--color-2),var(--color-5));
+}
+#cal-icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: var(--color-3);
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    right: 15px;
+}
+#bar-1 #para-1{
+    font-size: 18px;
+    font-weight: 700;
+}
+#para-1 span{
+    font-size: 15px;
+}
+#para-2{
+    font-size: 12px;
+}
+#para-3{
+    font-size: 8px;
+    opacity: 0.6;
+}
+#para-4{
+    font-size: 15px;
+    font-weight: 700;
+}
+#para-4 span{
+    font-size: 12px;
+}
+#bar-5{
+    position: relative;
+    left: 105px;
+    bottom: 190px
+}
+#bar-3{
+    position: relative;
+    right: 30px;
+    bottom: 40px;
+}
+#bar-6{
+    position: relative;
+    left: 185px;
+    bottom: 5px;
+}
+#bar-2{
+    position: relative;
+    right: 85px;
+    top: 10px;
+}
+#bar-4{
+    position: relative;
+    left: 30px;
+    bottom: 95px;
 }
 .about-us{
-    width:800px;
     height: 400px;
     display: flex;
-    background: linear-gradient(70deg, var(--color-1), var(--color-2));
+    background: linear-gradient(120deg, var(--color-1), var(--color-2));
     position: relative;
 }
 .section1{
@@ -382,7 +489,7 @@
     margin-top: -40px;
     margin-right: 10px;
     line-height: 1.6;
-    background: linear-gradient(30deg, var(--color-6),var(--color-2),var(--color-5));
+    background: linear-gradient(120deg, var(--color-6),var(--color-2),var(--color-5));
 }
 .template p {
     font-size: 8px;
@@ -407,11 +514,13 @@
     margin: 0;
 }
 .section2 button{
-    border-radius: 10px;
-    background: linear-gradient(50deg, var(--color-4), var(--color-3)20%);
+    border-radius: 20px;
+    border: none;
+    font-size: 12px;
+    background: linear-gradient(180deg, var(--color-3), var(--color-4));
     position: absolute;
-    left: 20px;
-    padding: 2px 10px;
+    left: 5px;
+    padding: 5px 10px;
     
 }
 #meta-logo {
