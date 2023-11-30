@@ -11,14 +11,18 @@
     --color-5: rgb(226, 107, 117);
     --color-6: rgb(52, 52, 243);
     --color-7: rgb(244,186,26);
+    --color-8: rgb(249, 57, 57);
 }
-
+.page-wraper{
+    position: relative;
+}
 .nav-bar{
     width: 800px;
     display: flex;
     justify-content: center;
     text-align: center;
     background: var(--color-1);
+    position: sticky;
 }
 .buttons{
     margin: 10px 0 10px -30px;
@@ -38,6 +42,143 @@
 .nav-bar .contact{
     display: flex;
     justify-content: space-between;
+    font-size: 12px;
+    font-weight: 400;
+
+
+}
+
+.hero-section{
+    width: 800px;
+    height: 440px;
+    background: var(--color-1);
+    background-image: url("vritualevent.png");
+    background-size: 360px;
+    background-repeat: no-repeat;
+    background-position: 50% 100% ;
+}
+.heading{
+    justify-content: center;
+    text-align: center;
+
+}
+.heading h5{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.heading h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+.heading h4{
+    font-size: 24px;
+    font-weight: 700;
+}
+.heading .span-1{
+    background: linear-gradient(to right, var(--color-7),var(--color-5), var(--color-6)); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    font-size: 24px;
+}
+.cards{
+    position: relative;
+}
+.cards p{
+    font-size: 8px;
+    padding: 5px 5px 0 5px;
+}
+.cards #value{
+    font-size: 16px;
+    font-weight: 700;
+    padding-right: 15px;
+}
+.cards .icon-1, .icon-3, .icon-5{
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-8);
+    border-radius: 100%;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+
+}
+.cards .icon-2, .icon-4, .icon-6{
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-8);
+    border-radius: 100%;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+
+}
+.card-1{
+    width: 110px;
+    height: 40px;
+    background: linear-gradient(120deg, var(--color-6),var(--color-2),var(--color-5));
+    border-radius: 5px;
+    position: absolute;
+    left: 130px;
+    top: 140px;
+    justify-content: end;
+    text-align: end;
+}
+.card-2{
+    width: 110px;
+    height: 40px;
+    background: linear-gradient(120deg, var(--color-6),var(--color-2),var(--color-5));
+    border-radius: 5px;
+    position: absolute;
+    right: 130px;
+    top: 140px;
+    justify-content: start;
+    text-align: start;
+}
+.card-3{
+    width: 110px;
+    height: 40px;
+    background: linear-gradient(120deg, var(--color-6),var(--color-2),var(--color-5));
+    border-radius: 5px;
+    position: absolute;
+    left: 160px;
+    top: 200px;
+    justify-content: end;
+    text-align: end;
+
+}
+.card-4{
+    width: 110px;
+    height: 40px;
+    background: linear-gradient(120deg, var(--color-6),var(--color-2),var(--color-5));
+    border-radius: 5px;
+    position: absolute;
+    right: 160px;
+    top: 200px;
+    justify-content: start;
+    text-align: start;
+}
+.card-5{
+    width: 110px;
+    height: 40px;
+    background: linear-gradient(120deg, var(--color-6),var(--color-2),var(--color-5));
+    border-radius: 5px;
+    position: absolute;
+    left: 190px;
+    top: 260px;
+    justify-content: end;
+    text-align: end;
+}
+.card-6{
+    width: 110px;
+    height: 40px;
+    background: linear-gradient(120deg, var(--color-6),var(--color-2),var(--color-5));
+    border-radius: 5px;
+    position: absolute;
+    right: 190px;
+    top: 260px;
+    justify-content: start;
+    text-align: start;
 }
 
 .feature-section{
@@ -50,12 +191,18 @@
     padding: 10px 0 10px 0;
     font-size: 12px;
     font-weight: 600;
+
 }
-/* .feature-section #feature-logo{
-    position: absolute;
-    left: 55px;
-    top: 22px;
-}   */
+#feature-logo{
+    width: 20px;
+    height: 20px;
+    transition: transform .2s;
+}
+.feature-section #feature-logo:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}  
 /* .feature-section p{
     position: relative;
     top: 15px;
@@ -68,7 +215,7 @@
 .section1 .images{
     position: absolute;
     left: 145px;
-    top: 90px;
+    top: 90px;    
 }
 .images .logo{
     position: relative;
@@ -83,7 +230,6 @@
     padding: 10px;
     margin-top: 200px;
     margin-left: 195px;
-    
     line-height: 1.6;
     background: linear-gradient(30deg, var(--color-6),var(--color-2),var(--color-5))
 }
@@ -140,7 +286,6 @@
 .about-us{
     width:800px;
     height: 400px;
-    border: 2px solid red;
     display: flex;
     background: linear-gradient(70deg, var(--color-1), var(--color-2));
     position: relative;
