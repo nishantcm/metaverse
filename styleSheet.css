@@ -90,6 +90,17 @@ html, body {margin: 0; height: 100%;}
 .head{
     display: inline-block;
 }
+.slide-right{
+    animation: 3s slide-right;
+}
+@keyframes slide-right {
+    from{
+        margin-left: -100%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
 .heading h5{
     font-size: 16px;
     font-weight: 700;
@@ -212,28 +223,25 @@ html, body {margin: 0; height: 100%;}
     top: 260px;
 }
 
-.feature-section, .class-1, .class-2{
-    line-height: 2;
+.feature-section{
     background: var(--color-10);
-    display: flex;
-    position: relative;
-    padding: 10px;
+    padding: 30px 0;
     font-size: 12px;
     font-weight: 600;
     cursor: pointer;
+    display: flex;
 }
-.class-1 .feature-sec-1 {
-    padding-left: 100px;
+.feature-card {
+    text-align: center;
 }
-.class-2 .feature-sec-2 {
-    padding-right: 100px;
+.feature-card i{
+    display: inline-block;
+    margin-bottom: 24px;
 }
 .feature-section p:hover{
     color: var(--color-4)
 }
 #feature-logo:hover{
-    width: 20px;
-    height: 20px;
     transition: transform .2s;
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
