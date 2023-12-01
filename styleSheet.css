@@ -18,7 +18,7 @@
     --color-12: rgb(58, 57, 57);
     --color-13: rgb(255, 255, 255);
 }
-html, body {margin: 0; height: 100%; overflow: hidden}
+html, body {margin: 0; height: 100%;}
 .page-wraper{
     width: 100vw;
     max-width: 1440px;
@@ -76,16 +76,16 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 .hero-section{
-    height: 450px;
     background: var(--color-1);
     background-image: url("vritualevent.png");
-    background-size: 360px;
+    background-size: 370px;
     background-repeat: no-repeat;
     background-position: 50% 100% ;
+    padding: 0 0 340px 0;
 }
 .heading{
     text-align: center;
-    padding-top: 30px;
+    padding-top: 45px;
 }
 .head{
     display: inline-block;
@@ -94,16 +94,19 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     font-size: 16px;
     font-weight: 700;
     text-align: start;
-    margin-left: 15px;
+    margin-left: 12px;
+    letter-spacing: 1px;
 }
 
 .heading h1{
     font-size: 48px;
     font-weight: 700;
+    letter-spacing: 4px;
 }
 .heading h4{
     font-size: 24px;
     font-weight: 700;
+    letter-spacing: 1px;
 }
 .heading .span-1{
     background: linear-gradient(to right, var(--color-7),var(--color-5), var(--color-6)); 
@@ -152,9 +155,6 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     height: 30px;
     background-color: var(--color-8);
     border-radius: 100%;
-    position: absolute;
-    left: 10px;
-    top: 5px;
     display: flex;
 }
 .cards .icon-2, .icon-4, .icon-6{
@@ -162,77 +162,53 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     height: 30px;
     background-color: var(--color-8);
     border-radius: 100%;
-    position: absolute;
-    right: 10px;
-    top: 5px;
     display: flex;
 }
-.card-1{
-    width: 110px;
-    height: 40px;
+
+.card-1, .card-3, .card-5 {
     background: linear-gradient(120deg, var(--color-6),var(--color-2),var(--color-5));
     border-radius: 5px;
     position: absolute;
+    text-align: end;
+    display: flex;
+    padding: 8px 20px 8px 8px;
+    column-gap: 8px;
+}
+.card-1{
     left: 130px;
     top: 140px;
-    justify-content: end;
-    text-align: end;
-}
-.card-2{
-    width: 110px;
-    height: 40px;
-    background: linear-gradient(120deg, var(--color-6),var(--color-2),var(--color-5));
-    border-radius: 5px;
-    position: absolute;
-    right: 130px;
-    top: 140px;
-    justify-content: start;
-    text-align: start;
-}
-.card-3{
-    width: 110px;
-    height: 40px;
-    background: linear-gradient(120deg, var(--color-6),var(--color-2),var(--color-5));
-    border-radius: 5px;
-    position: absolute;
-    left: 160px;
-    top: 200px;
-    justify-content: end;
-    text-align: end;
 
 }
-.card-4{
-    width: 110px;
-    height: 40px;
+
+.card-2, .card-4, .card-6{
     background: linear-gradient(120deg, var(--color-6),var(--color-2),var(--color-5));
     border-radius: 5px;
     position: absolute;
+    text-align: start;
+    display: flex;
+    padding: 8px 8px 8px 20px;
+    column-gap: 8px;
+
+}
+.card-2{
+    right: 130px;
+    top: 140px;
+}
+.card-3{
+    left: 160px;
+    top: 200px;
+}
+.card-4{
     right: 160px;
     top: 200px;
-    justify-content: start;
-    text-align: start;
 }
 .card-5{
-    width: 110px;
-    height: 40px;
-    background: linear-gradient(120deg, var(--color-6),var(--color-2),var(--color-5));
-    border-radius: 5px;
-    position: absolute;
     left: 190px;
     top: 260px;
-    justify-content: end;
-    text-align: end;
 }
 .card-6{
-    width: 110px;
-    height: 40px;
-    background: linear-gradient(120deg, var(--color-6),var(--color-2),var(--color-5));
-    border-radius: 5px;
-    position: absolute;
     right: 190px;
     top: 260px;
-    justify-content: start;
-    text-align: start;
 }
 
 .feature-section, .class-1, .class-2{
