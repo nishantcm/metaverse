@@ -18,9 +18,16 @@
     --color-12: rgb(58, 57, 57);
     --color-13: rgb(255, 255, 255);
 }
+body{
+    width: 800px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
 .page-wraper{
     position: relative;
     width: 800px;
+    box-sizing: border-box;
 }
 .nav-bar{
     display: flex;
@@ -38,6 +45,7 @@
     padding: 2px 10px;
     font-size: 12px;
     border: none;
+    cursor: pointer;
     background: linear-gradient(160deg, var(--color-4), var(--color-3));
 }
 .buttons #button-2{
@@ -46,6 +54,7 @@
     padding: 2px 10px;
     font-size: 12px;
     border: none;
+    cursor: pointer;
     background: linear-gradient(160deg, var(--color-5), var(--color-7));
 }
 .nav-bar .contact{
@@ -54,7 +63,7 @@
     font-size: 12px;
     font-weight: 400;
     column-gap: 20px;
-
+    cursor: pointer;
 }
 .contact p{
     display: inline-flex;
@@ -221,16 +230,21 @@
     text-align: start;
 }
 
-.feature-section{
-    height: 50px;
+.feature-section, .class-1, .class-2{
     line-height: 2;
     background: var(--color-10);
     display: flex;
     position: relative;
-    padding: 10px 0 10px 0;
+    padding: 10px;
     font-size: 12px;
     font-weight: 600;
-
+    cursor: pointer;
+}
+.class-1 .feature-sec-1 {
+    padding-left: 100px;
+}
+.class-2 .feature-sec-2 {
+    padding-right: 100px;
 }
 .feature-section p:hover{
     color: var(--color-4)
@@ -273,6 +287,7 @@
     height: 380px;
     position: relative;
     margin-bottom: -180px;
+    cursor: pointer;
 }
 .circle-2{
     border: 2px solid var(--color-11);
@@ -282,6 +297,7 @@
     position: absolute;
     top: 40px;
     left: 40px;
+    cursor: pointer;
 }
 .circle-3{
     border: 2px solid var(--color-11);
@@ -291,6 +307,7 @@
     position: absolute;
     top: 40px;
     left: 40px;
+    cursor: pointer;
 }
 .circle-4{
     background: var(--color-12);
@@ -302,6 +319,7 @@
     top: 40px;
     left: 40px;
     text-align: center;
+    
 }
 .circle-content{
     display: inline-block;
@@ -489,6 +507,7 @@
     margin-top: -40px;
     margin-right: 10px;
     line-height: 1.6;
+    cursor: pointer;
     background: linear-gradient(120deg, var(--color-6),var(--color-2),var(--color-5));
 }
 .template p {
@@ -521,7 +540,7 @@
     position: absolute;
     left: 5px;
     padding: 5px 10px;
-    
+    cursor: pointer;
 }
 #meta-logo {
     position: relative;
@@ -543,4 +562,82 @@
     position: absolute;
     left: 0;
     top: 90px;
+}
+ 
+@media only screen and (max-device-width: 375px){
+    body{
+        width: 375px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-bar{
+        width: 450px;
+    }
+    .buttons{
+        margin: 10px 15px 10px 0;
+    }
+    .card-1{
+        position: absolute;
+        left: 20px;
+    }
+    .card-2{
+        position: absolute;
+        right: 20px;
+    }
+    .card-3{
+        position: absolute;
+        left: 20px;
+    }
+    .card-4{
+        position: absolute;
+        right: 20px;
+    }
+    .card-5{
+        position: absolute;
+        left: 20px;
+    }
+    .card-6{
+        position: absolute;
+        right: 20px;
+    }
+    .feature-section .class-1{
+        display: block;
+        text-align: center;
+    }
+    .class-1 span{
+        padding: 5px 18px;
+        line-height: 1.8;
+    }
+    .feature-section .class-2{
+        display: block;
+        text-align: center;
+    }
+    .class-2 span{
+        padding: 10px 5px;
+        line-height: 1.8;
+    }
+    .class-1 .feature-sec-1 {
+        padding-left: 0;
+    }
+    .class-2 .feature-sec-2 {
+        padding-right: 0;
+    }
+    .about-us{
+        height: auto;
+        display: block;
+    }
+    .section1{
+        width: 0;
+        height: 200px;
+        padding: 10px;
+    }
+    .section1 .container{
+        position: absolute;
+        left: 110px;
+        top: 50px;   
+    }
+    .container{
+        margin-bottom: 43px;
+    }    
 }
